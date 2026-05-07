@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Yanis | Développeur Web & Automatisation</title>
+  <meta
+    name="description"
+    content="Portfolio freelance de Yanis : sites vitrines, dashboards, automatisation Excel/CSV et outils web."
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-slate-950 text-white">
+  <header class="fixed top-0 left-0 w-full z-50 bg-slate-950/85 backdrop-blur border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#accueil" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-2xl bg-cyan-400 text-slate-950 flex items-center justify-center font-black">
+          Y
+        </div>
+        <div>
+          <p class="font-bold leading-tight">Yanis</p>
+          <p class="text-xs text-slate-400">Web · Automatisation · Dashboards</p>
+        </div>
+      </a>
+
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#services" class="hover:text-cyan-300">Services</a>
+        <a href="#projets" class="hover:text-cyan-300">Projets</a>
+        <a href="#apropos" class="hover:text-cyan-300">À propos</a>
+        <a href="https://github.com/yanis-git60/" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-300">
+          GitHub
+        </a>
+        <a href="https://www.codeur.com/-yanisr1ef8" target="_blank" rel="noopener noreferrer" class="bg-cyan-400 text-slate-950 px-5 py-2 rounded-full font-bold hover:bg-cyan-300 transition">
+          Me contacter
+        </a>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-5 space-y-3 bg-slate-950 border-t border-white/10">
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#projets" class="mobile-link">Projets</a>
+      <a href="#apropos" class="mobile-link">À propos</a>
+      <a href="https://github.com/yanis-git60/" target="_blank" rel="noopener noreferrer" class="mobile-link">GitHub</a>
+      <a href="https://www.codeur.com/-yanisr1ef8" target="_blank" rel="noopener noreferrer" class="mobile-link">Codeur.com</a>
+    </div>
+  </header>
+
+  <main id="accueil" class="pt-24">
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 hero-bg"></div>
+
+      <div class="relative max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-400/10 text-cyan-300 border border-cyan-400/20 text-sm font-semibold">
+            <span class="w-2 h-2 rounded-full bg-cyan-300"></span>
+            Disponible pour petites missions freelance
+          </p>
+
+          <h1 class="mt-6 text-4xl md:text-6xl font-black tracking-tight leading-tight">
+            Développeur web & automatisation pour petites structures.
+          </h1>
+
+          <p class="mt-6 text-lg text-slate-300 max-w-xl leading-relaxed">
+            Je crée des sites vitrines, dashboards et petits outils web pour aider les indépendants,
+            associations et petites entreprises à gagner du temps.
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="#projets" class="btn-primary">
+              Voir mes projets
+            </a>
+
+            <a href="https://www.codeur.com/-yanisr1ef8" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              Me contacter sur Codeur.com
+            </a>
+          </div>
+
+          <div class="mt-10 grid grid-cols-3 gap-4 max-w-xl">
+            <div class="mini-stat">
+              <strong>2</strong>
+              <span>projets démo</span>
+            </div>
+
+            <div class="mini-stat">
+              <strong>Web</strong>
+              <span>sites vitrines</span>
+            </div>
+
+            <div class="mini-stat">
+              <strong>CSV</strong>
+              <span>automatisation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="portfolio-card">
+            <div class="flex items-center justify-between border-b border-white/10 pb-5">
+              <div>
+                <p class="text-sm text-slate-400">Mission type</p>
+                <h2 class="text-2xl font-black mt-1">Créer un outil utile rapidement</h2>
+              </div>
+
+              <div class="w-14 h-14 rounded-2xl bg-cyan-400 text-slate-950 flex items-center justify-center text-2xl">
+                ⚡
+              </div>
+            </div>
+
+            <div class="mt-6 space-y-4">
+              <div class="task-line">
+                <span>01</span>
+                <div>
+                  <h3>Comprendre le besoin</h3>
+                  <p>On part d’un problème concret : site, fichier Excel, CSV, API ou tâche répétitive.</p>
+                </div>
+              </div>
+
+              <div class="task-line">
+                <span>02</span>
+                <div>
+                  <h3>Développer la solution</h3>
+                  <p>Je livre une interface simple, propre et exploitable rapidement.</p>
+                </div>
+              </div>
+
+              <div class="task-line">
+                <span>03</span>
+                <div>
+                  <h3>Mettre en ligne</h3>
+                  <p>GitHub, Netlify, hébergement, déploiement et explication d’utilisation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="tech-badge">
+                <p class="font-black text-slate-950">HTML · CSS · JS</p>
+                <p class="text-xs text-slate-700">Tailwind · Chart.js · CSV</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="max-w-7xl mx-auto px-6 py-20">
+      <div class="max-w-3xl">
+        <p class="text-cyan-300 font-semibold">Services</p>
+        <h2 class="text-3xl md:text-5xl font-black mt-3">
+          Des prestations simples, utiles et bien cadrées.
+        </h2>
+        <p class="text-slate-400 mt-5 text-lg">
+          Je vise les missions concrètes : un site à mettre en ligne, un fichier à automatiser,
+          un dashboard à créer ou un outil interne à simplifier.
+        </p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>Sites vitrines</h3>
+          <p>
+            Création de sites modernes et responsives pour indépendants, cabinets,
+            commerces locaux ou associations.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Dashboards</h3>
+          <p>
+            Interfaces pour visualiser vos données, suivre vos indicateurs et rendre vos fichiers plus lisibles.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>Automatisation</h3>
+          <p>
+            Scripts Python, traitement CSV, exports, nettoyage de données et automatisation de tâches répétitives.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets" class="bg-white text-slate-950">
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+          <div>
+            <p class="text-blue-600 font-semibold">Projets</p>
+            <h2 class="text-3xl md:text-5xl font-black mt-3">
+              Exemples de réalisations
+            </h2>
+            <p class="text-slate-600 mt-5 text-lg max-w-2xl">
+              Ces projets sont des démonstrations portfolio pour montrer ce que je peux adapter à un vrai client.
+            </p>
+          </div>
+
+          <a href="https://github.com/yanis-git60/" target="_blank" rel="noopener noreferrer" class="bg-slate-950 text-white px-6 py-3 rounded-2xl font-bold hover:bg-slate-800 transition">
+            Voir mon GitHub
+          </a>
+        </div>
+
+        <div class="mt-12 grid lg:grid-cols-2 gap-8">
+          <article class="project-card">
+            <div class="project-preview medical-preview">
+              <div class="preview-window">
+                <div class="preview-top">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="preview-content">
+                  <div class="preview-pill"></div>
+                  <div class="preview-title"></div>
+                  <div class="preview-line"></div>
+                  <div class="preview-line short"></div>
+                  <div class="preview-grid">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-7">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tag">Site vitrine</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">Responsive</span>
+              </div>
+
+              <h3 class="text-2xl font-black">Cabinet médical — Site vitrine</h3>
+
+              <p class="text-slate-600 mt-3 leading-relaxed">
+                Site responsive fictif pour un médecin généraliste avec pages accueil,
+                services, horaires et contact.
+              </p>
+
+              <div class="mt-6 flex flex-col sm:flex-row gap-3">
+                <a href="https://site-vitrine-exemple-medecin.netlify.app" target="_blank" rel="noopener noreferrer" class="project-btn-primary">
+                  Voir la démo
+                </a>
+
+                <a href="https://www.codeur.com/-yanisr1ef8" target="_blank" rel="noopener noreferrer" class="project-btn-secondary">
+                  Demander un site similaire
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview dashboard-preview">
+              <div class="preview-dashboard">
+                <div class="dash-kpis">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+
+                <div class="dash-chart">
+                  <span style="height: 45%"></span>
+                  <span style="height: 75%"></span>
+                  <span style="height: 55%"></span>
+                  <span style="height: 90%"></span>
+                  <span style="height: 65%"></span>
+                </div>
+
+                <div class="dash-table">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-7">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tag">Dashboard</span>
+                <span class="tag">CSV</span>
+                <span class="tag">Chart.js</span>
+              </div>
+
+              <h3 class="text-2xl font-black">AutoDash CSV</h3>
+
+              <p class="text-slate-600 mt-3 leading-relaxed">
+                Dashboard web connecté à un fichier CSV, avec KPI, graphiques, filtres,
+                analyse clients/produits et export des données.
+              </p>
+
+              <div class="mt-6 flex flex-col sm:flex-row gap-3">
+                <a href="https://demo-dashboard-csv.netlify.app" target="_blank" rel="noopener noreferrer" class="project-btn-primary">
+                  Voir la démo
+                </a>
+
+                <a href="https://www.codeur.com/-yanisr1ef8" target="_blank" rel="noopener noreferrer" class="project-btn-secondary">
+                  Demander un dashboard
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos" class="max-w-7xl mx-auto px-6 py-20">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-cyan-300 font-semibold">À propos</p>
+          <h2 class="text-3xl md:text-5xl font-black mt-3">
+            Étudiant ingénieur informatique, orienté solutions concrètes.
+          </h2>
+
+          <p class="text-slate-300 mt-6 leading-relaxed text-lg">
+            Je suis étudiant en école d’ingénieur informatique et en alternance dans une DSI.
+            Je développe des sites et des petits outils web pour répondre à des besoins simples :
+            présenter une activité, automatiser un fichier, filtrer des données ou créer un dashboard.
+          </p>
+
+          <p class="text-slate-400 mt-4 leading-relaxed">
+            Mon objectif est de livrer rapidement quelque chose de propre, compréhensible et utilisable,
+            sans complexité inutile.
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="https://github.com/yanis-git60/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              Voir mon GitHub
+            </a>
+
+            <a href="https://www.codeur.com/-yanisr1ef8" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              Me contacter sur Codeur.com
+            </a>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="skill-card">
+            <strong>Frontend</strong>
+            <span>HTML, CSS, JavaScript, Tailwind</span>
+          </div>
+
+          <div class="skill-card">
+            <strong>Data</strong>
+            <span>CSV, Excel, filtres, dashboards</span>
+          </div>
+
+          <div class="skill-card">
+            <strong>Backend</strong>
+            <span>Python, SQL, API REST</span>
+          </div>
+
+          <div class="skill-card">
+            <strong>Déploiement</strong>
+            <span>GitHub, Netlify, mise en ligne</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-cyan-400 text-slate-950">
+      <div class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="font-semibold">Contact</p>
+          <h2 class="text-3xl md:text-5xl font-black mt-3">
+            Un petit projet à réaliser ?
+          </h2>
+          <p class="mt-5 text-slate-800 text-lg max-w-xl">
+            Site vitrine, dashboard, automatisation CSV/Excel ou petit outil web :
+            je peux vous aider à cadrer et développer une première version.
+          </p>
+        </div>
+
+        <div class="bg-slate-950 text-white rounded-[2rem] p-8 shadow-2xl">
+          <h3 class="text-2xl font-black">Liens utiles</h3>
+
+          <p class="text-slate-400 mt-3">
+            Les deux boutons ci-dessous mènent vers mes profils utiles pour discuter d’une mission ou voir mon code.
+          </p>
+
+          <div class="mt-6 grid gap-4">
+            <a href="https://www.codeur.com/-yanisr1ef8" target="_blank" rel="noopener noreferrer" class="contact-btn-primary">
+              Me contacter sur Codeur.com
+            </a>
+
+            <a href="https://github.com/yanis-git60/" target="_blank" rel="noopener noreferrer" class="contact-btn-secondary">
+              Voir mon GitHub
+            </a>
+
+            <button id="copyMessageBtn" class="contact-btn-copy">
+              Copier un message de prospection
+            </button>
+          </div>
+
+          <p id="copyStatus" class="hidden mt-4 text-sm text-cyan-300 font-semibold">
+            Message copié.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-950 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-8 text-sm text-slate-400 flex flex-col md:flex-row justify-between gap-3">
+      <p>Portfolio freelance — Yanis</p>
+      <p>HTML · Tailwind · JavaScript · Netlify</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
